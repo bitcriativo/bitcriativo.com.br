@@ -17,7 +17,7 @@
     <body class="container-fluid">
         <!-- Navbar START -->
         <nav class="navbar row">
-            <div class="navbar-container col-4">
+            <div class="navbar-container col-12 col-lg-2 col-xl-4">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ asset('assets/images/brand.png') }}" class="d-inline-block align-top" alt="">
                 </a>
@@ -27,7 +27,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="navbar-list collapsed col-4">
+            <div class="navbar-list collapsed col-12 col-lg-4">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ route('home') }}">Início <span class="sr-only">(Atual)</span></a>
@@ -44,10 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contato</a>
                     </li>
-                    </ul>
-
+                </ul>
             </div>
-            <div class="nav-btns col-4 d-flex justify-content-end">
+            <div class="nav-btns navbar-list collapsed col-12 col-lg-5 col-xl-4 d-flex justify-content-end">
                 <a href="auth/login.html" class="btn btn-ghost">Área do Cliente</a>
                 <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
             </div>
