@@ -542,22 +542,25 @@
               <form action="">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label text--small">Nome</label>
-                  <input type="email" class="form-control input" id="exampleFormControlInput1" placeholder="Seu nome">
+                  <input id="input-contact-name" type="email" class="form-control input" placeholder="Seu nome">
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label text--small">Telefone</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(99) 99999-9999">
+                  <input id="input-contact-phone-number" type="email" class="form-control input-phone-number-mask" placeholder="(99) 99999-9999">
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label text--small">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="exemplo@gmail.com">
+                  <input id="input-contact-email" type="email" class="form-control" placeholder="exemplo@gmail.com">
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label text--small">Mensagem</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  <textarea id="input-contact-message" class="form-control" id="exampleFormControlTextarea1" rows="3"
                     placeholder="Sua mensagem ..."></textarea>
                 </div>
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button id="btn-contact-submit" class="btn btn-primary newsletter__btn" type="button">
+                  Enviar
+                  <span class="icon-spinner mx-2 d-none"></span>
+                </button>
               </form>
             </div>
           </div>
