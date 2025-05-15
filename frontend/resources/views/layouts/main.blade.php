@@ -18,7 +18,7 @@
         <!-- Navbar START -->
         <nav class="navbar">
             <div class="navbar-container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ asset('assets/images/brand.png') }}" class="d-inline-block align-top" alt="">
                 </a>
 
