@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass:build": "sass ./assets/sass/app.sass:./assets/css/style.min.css --style compressed",
+    "sass:build": "sass ./src/assets/sass/app.sass:./dist/assets/css/style.min.css --style compressed",
     "sass:watch": "sass --watch ./assets/sass/app.sass:./assets/css/style.min.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack build --config ./webpack.config.js --mode=production",

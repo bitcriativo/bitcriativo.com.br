@@ -6,6 +6,23 @@
 .btn
   @extend .text--small
   text-transform: uppercase
+  position: relative
+  padding: 10px 20px
+  font-size: 16px
+  color: white
+  border: none
+  border-radius: 6px
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  border: 1px solid transparent
+
+.btn-sending
+  pointer-events: none
+  opacity: 0.8
+  background-color: color.adjust(variables.$color-primary, $lightness: -30%) !important
+  border-color: color.adjust(variables.$color-primary, $lightness: -30%) !important
 
 .btn-primary
   background-color: variables.$color-primary
@@ -17,7 +34,7 @@
     border-color: color.adjust(variables.$color-primary, $lightness: -30%)
 
   &:active
-    background-color: color.adjust(variables.$color-primary, $lightness: 10%) !important
+    background-color: color.adjust(variables.$color-primary, $lightness: 10%)!important
     border-color: color.adjust(variables.$color-primary, $lightness: 10%) !important
 
 .btn-outline
