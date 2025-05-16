@@ -12,6 +12,10 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+        <!--CSS Vendor-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
         <title>@yield('title', 'Laravel')</title>
     </head>
     <body class="container-fluid">
