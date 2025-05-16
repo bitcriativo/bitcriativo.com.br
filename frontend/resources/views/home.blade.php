@@ -104,5 +104,70 @@
         </div>
     </section>
     <!-- FEATURES END -->
+
+    <!-- PORTFOLIO START -->
+    <section class="section mt-5">
+        <div>
+            <div class="row section__portfolio">
+                <h2 class="display">Nosso <span class="text-primary">Portfólio</span></h2>
+                <p class="text--large">
+                    Cada projeto que desenvolvemos é pensado para gerar resultados reais. Confira alguns dos nossos trabalhos e veja
+                    como podemos transformar a presença digital da sua empresa com sites modernos, rápidos e eficazes.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--CARD PORTFOLIO START-->
+                    <div class="card card--portfolio mx-auto my-3" style="width: 18rem; height: 100%;">
+                        <img src="{{ asset('assets/images/under_construction.png') }}" class="card-img-top" alt="Projeto em construção">
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title">Em breve: Site Institucional</h5>
+                                <p class="card-text">Desenvolvimento de site moderno, responsivo e otimizado para conversão e autoridade
+                                    digital.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-card--portfolio d-none">Visualizar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--CARD PORTFOLIO START-->
+                    <div class="card card--portfolio mx-auto my-3" style="width: 18rem; height: 100%;">
+                        <img src="{{ asset('assets/images/under_construction.png') }}" class="card-img-top" alt="Projeto em construção">
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title">Em breve: Loja Virtual</h5>
+                                <p class="card-text">Plataforma de e-commerce completa, com integração a pagamentos, frete automático e
+                                    painel de controle.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-card--portfolio d-none">Visualizar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--CARD PORTFOLIO START-->
+                    <div class="card card--portfolio mx-auto my-3" style="width: 18rem; height: 100%;">
+                        <img src="{{ asset('assets/images/under_construction.png') }}" class="card-img-top" alt="Projeto em construção">
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title">Em breve: Landing Page</h5>
+                                <p class="card-text">Página de captura de leads com foco em campanhas de tráfego pago e conversão de
+                                visitantes.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-card--portfolio d-none">Visualizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 d-none">
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-outline">Ver Mais</button>
+                </div>
+            </div>
+            <div class="section__label">Portfólio</div>
+        </div>
+    </section>
+    <!-- PORTFOLIO END -->
+
 </main>
 @endsection
