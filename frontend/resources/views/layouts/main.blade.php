@@ -34,14 +34,14 @@
                 </div>
                 <div class="navbar-list collapsed col-12 col-lg-4">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item {{ Route::is('home') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('home') }}">Início <span class="sr-only">(Atual)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sobre nós</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                        <li class="nav-item {{ Route::is('blog') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ Route('blog') }}">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Serviços</a>

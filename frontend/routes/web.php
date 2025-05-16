@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\FormContactController;
 use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
@@ -13,3 +14,8 @@ Route::post('/newsletter/subscribe', [NewsletterController::class, 'newsletterSu
 
 Route::post('/form/contact', [FormContactController::class, 'submitFormContact'])
     ->name('forms.contact.submit');
+
+/** Route Blog */
+Route::prefix('/blog')->group(function () {
+    Route::get('/', [BlogController::class, 'index'])->name('blog');
+});
