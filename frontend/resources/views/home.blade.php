@@ -169,5 +169,126 @@
     </section>
     <!-- PORTFOLIO END -->
 
+    <!-- SERVICES START -->
+    <section id="servicos" class="section mt-5">
+        <div>
+            <div class="section__header">
+                <h2 class="display">Nossos <span class="text-primary">Serviços</span></h2>
+                <p class="text--large">Soluções digitais personalizadas para alavancar o seu negócio online.</p>
+            </div>
+            <div class="row">
+                <!-- CARD: Desenvolvimento de Sites -->
+                <div class="col-12 col-md-6 col-xl-4 my-3">
+                    <div class="card mx-auto" style="width: 24rem; height: 100%;">
+                        <i class="ph ph-globe card-icon"></i>
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title text--large-bold">Desenvolvimento de Sites</h5>
+                                <p class="text--small">
+                                <span class="text--bold">Sites personalizados para seu negócio</span>
+                                <br />
+                                Criamos sites modernos, responsivos e otimizados para resultados. Com foco em experiência do usuário
+                                (UX) e SEO, garantimos que seu site seja não só bonito, mas também eficaz na conversão de visitantes em
+                                clientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD: Desenvolvimento de E-commerce -->
+                <div class="col-12 col-md-6 col-xl-4 my-3">
+                    <div class="card mx-auto" style="width: 24rem; height: 100%;">
+                        <i class="ph ph-bag card-icon"></i>
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title text--large-bold">Desenvolvimento de E-commerce</h5>
+                                <p class="text--small">
+                                <span class="text--bold">Sua loja online pronta para vender</span>
+                                <br />
+                                Construímos e comissionamos e-commerces com a melhor tecnologia para garantir que sua loja seja fácil de
+                                navegar, segura e escalável. Ajudamos você a expandir suas vendas com sistemas de pagamento, integração
+                                de estoque e recursos avançados de gerenciamento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD: Desenvolvimento de Landing Pages -->
+                <div class="col-12 col-md-6 col-xl-4 my-3">
+                    <div class="card mx-auto" style="width: 24rem; height: 100%;">
+                        <i class="ph ph-pyramid card-icon"></i>
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title text--large-bold">Desenvolvimento de Landing Pages</h5>
+                                <p class="text--small">
+                                <span class="text--bold">Landing Pages para maximizar conversões</span>
+                                <br />
+                                    Criamos landing pages de alta conversão, totalmente focadas no seu objetivo de marketing. Seja para
+                                    capturar leads, promover um produto ou realizar uma oferta exclusiva, nossas páginas são feitas para
+                                    aumentar os resultados da sua campanha.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD: Gestão de Projetos Digitais -->
+                <div class="col-12 col-md-6 col-xl-4 my-3">
+                    <div class="card mx-auto" style="width: 24rem; height: 100%;">
+                        <i class="ph ph-checks card-icon"></i>
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title text--large-bold">Gestão de Projetos Digitais</h5>
+                                <p class="text--small">
+                                    <span class="text--bold">Acompanhamento completo do seu projeto</span>
+                                    <br />
+                                    Oferecemos uma gestão estratégica e operacional de projetos digitais. Acompanhamos todas as etapas do
+                                    seu projeto, garantindo a execução dentro dos prazos, com qualidade e alinhado aos objetivos de negócio.
+                                    Desde o planejamento até a entrega final, estamos ao seu lado em cada fase.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD: Otimização e Performance de Sites -->
+                <div class="col-12 col-md-6 col-xl-4 my-3">
+                    <div class="card mx-auto" style="width: 24rem; height: 100%;">
+                        <i class="ph ph-speedometer card-icon"></i>
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title text--large-bold">Otimização e Performance de Sites</h5>
+                                <p class="text--small">
+                                    <span class="text--bold">Melhore a performance do seu site</span>
+                                    <br />
+                                    Garantimos que o seu site funcione de maneira rápida e eficiente, com otimização para velocidade,
+                                    desempenho e usabilidade. Melhoramos o tempo de carregamento e a navegação para proporcionar uma melhor
+                                    experiência para os usuários e aumentar a taxa de conversão.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD: Suporte e Manutenção de Sites -->
+                <div class="col-12 col-md-6 col-xl-4 my-3">
+                    <div class="card mx-auto" style="width: 24rem; height: 100%;">
+                        <i class="ph ph-wrench card-icon"></i>
+                        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                            <div>
+                                <h5 class="card-title text--large-bold">Suporte e Manutenção de Sites</h5>
+                                <p class="text--small">
+                                    <span class="text--bold">Traga tranquilidade para o seu negócio</span>
+                                    <br />
+                                    Oferecemos suporte contínuo e manutenção para garantir que o seu site ou e-commerce esteja sempre
+                                    atualizado, seguro e funcionando perfeitamente. Cuidamos de backups, atualizações e problemas técnicos
+                                    para que você possa focar no que realmente importa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__label">Nossos Serviços</div>
+        </div>
+    </section>
+    <!-- SERVICES END -->
 </main>
 @endsection
