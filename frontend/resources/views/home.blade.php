@@ -380,5 +380,45 @@
         </div>
     </section>
     <!--TESTIMONIAL END-->
+
+    <!-- FORM CONTACT START -->
+    <section id="contato" class="my-5 section" >
+        <div>
+            <div class="row section__header">
+                <h2 class="display">Fale <span class="text-primary">Conosco</span></h2>
+                <p class="text--large">Tem alguma dúvida ou quer saber mais sobre nossos serviços? Preencha o formulário abaixo e
+                entraremos em contato!</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text--small">Nome</label>
+                            <input id="input-contact-name" type="email" class="form-control input" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text--small">Telefone</label>
+                            <input id="input-contact-phone-number" type="email" class="form-control input-phone-number-mask" placeholder="(99) 99999-9999">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text--small">Email</label>
+                            <input id="input-contact-email" type="email" class="form-control" placeholder="exemplo@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label text--small">Mensagem</label>
+                            <textarea id="input-contact-message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Sua mensagem ..."></textarea>
+                        </div>
+                        <button id="btn-contact-submit" class="btn btn-primary newsletter__btn" type="button">
+                            Enviar
+                            <span class="icon-spinner mx-2 d-none"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="section__label">Contato</div>
+        </div>
+    </section>
+    <!-- FORM CONTACT END -->
 </main>
 @endsection
