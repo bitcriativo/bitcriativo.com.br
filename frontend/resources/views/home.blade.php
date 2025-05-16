@@ -290,5 +290,95 @@
         </div>
     </section>
     <!-- SERVICES END -->
+
+    <!--TESTIMONIAL START-->
+    <section class="section mt-5">
+        <div>
+            <div class="row section__header">
+                <h2 class="display">O que dizem <span class="text-primary">sobre nós</span></h2>
+                <p class="text--large">Empreendedores que confiaram na nossa equipe de TI e agora colhem os resultados. Veja como
+                    ajudamos negócios como o seu a crescer com tecnologia acessível e eficiente.</p>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                    <!--TESTIMONIAL START-->
+                    <div class="card mx-auto" style="width: 25rem;">
+                        <div class="card-body">
+                            <p class="text">
+                                <span class="text--large">"</span> Estávamos com um site desatualizado e sem presença digital. A equipe da
+                                Bit Criativo redesenhou nosso site, e agora estamos recebendo mais visitantes e gerando mais vendas. <span
+                                class="text--large">"</span>
+                            </p>
+                            <div class="card-info">
+                                <div class="card-rate">
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                </div>
+                                <div>
+                                    <span class="card-info-client">Marcos Silva</span>
+                                    <span class="card-info-profession">CEO da Loja Digital</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                    <!--TESTIMONIAL START-->
+                    <div class="card mx-auto" style="width: 25rem;">
+                        <div class="card-body">
+                            <p class="text">
+                                <span class="text--large">"</span> A Bit Criativo nos ajudou a lançar nossa loja online de forma rápida e
+                                eficiente. Agora, conseguimos atender clientes em todo o Brasil com um sistema de e-commerce robusto e
+                                fácil de usar. <span class="text--large">"</span>
+                            </p>
+                            <div class="card-info">
+                                <div class="card-rate">
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                </div>
+                                <div>
+                                    <span class="card-info-client">Claudia Mendes</span>
+                                    <span class="card-info-profession">Fundadora da loja online ShopTech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                    <!--TESTIMONIAL START-->
+                    <div class="card mx-auto" style="width: 25rem;">
+                        <div class="card-body">
+                            <p class="text">
+                                <span class="text--large">"</span> Trabalhamos com a Bit Criativo para melhorar nossa presença digital.
+                                Eles desenvolveram uma landing page de alta conversão que ajudou a aumentar nossa base de leads em 50%.
+                                <span class="text--large">"</span>
+                            </p>
+                            <div class="card-info">
+                                <div class="card-rate">
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                    <i class="ph ph-star"></i>
+                                </div>
+                                <div>
+                                    <span class="card-info-client">Lucas Almeida</span>
+                                    <span class="card-info-profession">Co-fundador da Agência WebLab</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__label">Depoimentos</div>
+        </div>
+    </section>
+    <!--TESTIMONIAL END-->
 </main>
 @endsection
