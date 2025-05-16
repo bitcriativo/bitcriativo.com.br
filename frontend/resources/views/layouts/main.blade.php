@@ -91,6 +91,13 @@
                                 {{ session('newsletter_subscribe_success') }}
                             </div>
                         @endif
+
+                        @if(session('newsletter_subscribe_error'))
+                            <div class="alert alert-danger">
+                                {{ session('newsletter_subscribe_error') }}
+                            </div>
+                        @endif
+
                         <form class="newsletter" action="{{ route('newsletter.subscribe') }}" method="POST">
                             @csrf
                             <div class="mb-3">
