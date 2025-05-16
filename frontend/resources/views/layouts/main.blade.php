@@ -86,12 +86,18 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mt-3">
                         <div class="footer__section__title">Assinar Newsletter</div>
-                        <form class="newsletter">
+                        @if(session('newsletter_subscribe_success'))
+                            <div class="alert alert-success">
+                                {{ session('newsletter_subscribe_success') }}
+                            </div>
+                        @endif
+                        <form class="newsletter" action="{{ route('newsletter.subscribe') }}" method="POST">
+                            @csrf
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label sr-only">Email</label>
-                                <input id="input-newsletter-subscriber-email" class="input newsletter__input" type="email" placeholder="exemplo@gmail.com">
+                                <input id="input-newsletter-subscriber-email" class="input newsletter__input" type="email" placeholder="exemplo@gmail.com" value="{{ old('email') }}" name="email">
                             </div>
-                            <button id="btn-newsletter-subscriber-submit" class="btn btn-primary newsletter__btn" type="button">Inscreve-se <span class="icon-spinner mx-2 d-none"></span></button>
+                            <button id="btn-newsletter-subscriber-submit" class="btn btn-primary newsletter__btn" type="submit">Inscreve-se <span class="icon-spinner mx-2 d-none"></span></button>
                         </form>
                     </div>
                 </div>
