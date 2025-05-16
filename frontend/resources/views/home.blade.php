@@ -391,25 +391,37 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 mx-auto">
-                    <form action="">
+                    @if(session('form_contact_success'))
+                        <div class="alert alert-success">
+                            {{ session('form_contact_success') }}
+                        </div>
+                    @endif
+
+                    @if(session('form_contact_error'))
+                        <div class="alert alert-danger">
+                            {{ session('form_contact_error') }}
+                        </div>
+                    @endif
+                    <form action="{{ route("forms.contact.submit") }}" method="POST">
+                        @csrf
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label text--small">Nome</label>
-                            <input id="input-contact-name" type="email" class="form-control input" placeholder="Seu nome">
+                            <input name="name" value="{{ old('name') }}" id="input-contact-name" type="text" class="form-control input" placeholder="Seu nome">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label text--small">Telefone</label>
-                            <input id="input-contact-phone-number" type="email" class="form-control input-phone-number-mask" placeholder="(99) 99999-9999">
+                            <input name="phone_number" value="{{ old('phone_number') }}" id="input-contact-phone-number" type="text" class="form-control input-phone-number-mask" placeholder="(99) 99999-9999">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label text--small">Email</label>
-                            <input id="input-contact-email" type="email" class="form-control" placeholder="exemplo@gmail.com">
+                            <input name="email" value="{{ old('email') }}" id="input-contact-email" type="email" class="form-control" placeholder="exemplo@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label text--small">Mensagem</label>
-                            <textarea id="input-contact-message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            <textarea name="message" value="{{ old('message') }}" id="input-contact-message" class="form-control" rows="3"
                                 placeholder="Sua mensagem ..."></textarea>
                         </div>
-                        <button id="btn-contact-submit" class="btn btn-primary newsletter__btn" type="button">
+                        <button id="btn-contact-submit" class="btn btn-primary newsletter__btn" type="submit">
                             Enviar
                             <span class="icon-spinner mx-2 d-none"></span>
                         </button>
