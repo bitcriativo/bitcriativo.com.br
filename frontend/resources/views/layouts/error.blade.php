@@ -59,16 +59,16 @@
                             <a class="nav-link" href="{{ route('home') }}">Início <span class="sr-only">(Atual)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre nós</a>
+                            <a class="nav-link" href="{{ route('home') }}/#sobre-nos">Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="{{ route('home') }}/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link" href="{{ route('home') }}/#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="{{ route('home') }}/#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
