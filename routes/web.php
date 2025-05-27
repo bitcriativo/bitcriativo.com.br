@@ -19,3 +19,10 @@ Route::post('/form/contact', [FormContactController::class, 'submitFormContact']
 Route::prefix('/blog')->group(function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
 });
+
+/** Route Portfolio */
+Route::prefix('/portfolio/bip-hora')->group(function () {
+    Route::get('/', function () {
+        return view('portfolio.bip_hora.home');
+    })->name('bip-hora');
+});
