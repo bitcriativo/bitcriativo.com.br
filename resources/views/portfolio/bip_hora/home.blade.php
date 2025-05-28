@@ -102,12 +102,12 @@
     <!-- Partners End -->
 
     <!-- Testimonials Start -->
-    <section>
+    <section class="my-32">
         <h2 class="text-center justify-start text-slate-800 text-5xl font-normal font-sans leading-[55px] tracking-tight">Testimonials</h2>
-        <img src="{{ asset('bip-hora/assets/images/image_testimonials_1.png') }}" />
+        <img class="mx-auto my-16" src="{{ asset('bip-hora/assets/images/image_testimonials_1.png') }}" />
         <div class="text-center justify-start text-gray-700 text-sm font-bold font-sans leading-none tracking-tight">Most calendars are designed for teams. <br/>Slate is designed for freelancers who want a <br/>simple way to plan their schedule.</div>
 
-        <div class="flex space-x-2 items-center">
+        <div class="flex space-x-2 items-center my-8 justify-center">
             <img src="{{ asset('bip-hora/assets/images/image_testimonials_2.png') }}" />
             <div>
                 <div class="justify-start text-gray-700 text-[10.14px] font-bold font-sans leading-none tracking-tight">Organize across</div>
@@ -115,9 +115,9 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <a href="#" class="mx-auto px-4 py-2 my-4 bg-blue-500 rounded-[35px] flex-col inline-flex items-center gap-2.5 overflow-hidden justify-start text-white text-lg font-normal font-sans leading-tight tracking-tight">
+            <button class="mx-auto px-4 py-2 my-4 bg-blue-500 rounded-[35px] flex-col inline-flex items-center gap-2.5 overflow-hidden justify-start text-white text-lg font-normal font-sans leading-tight tracking-tight">
                 More Testimonials
-            </a>
+            </button>
         </div>
     </section>
     <!-- Testimonials End -->
