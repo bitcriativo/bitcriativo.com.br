@@ -50,4 +50,26 @@
     </section>
     <!-- Features End -->
 
+    <!-- Newsletter Start -->
+    <section>
+        <h2 class="text-center justify-start text-slate-800 text-5xl font-normal font-sans leading-[55px] tracking-tight">Newsletter </h2>
+        <p class="text-center justify-start text-gray-700 text-3xl font-normal font-sans leading-10 tracking-tight">Most calendars are designed for teams. <br/>Slate is designed for freelancers</p>
+        <img src="{{ asset('bip-hora/assets/images/image_newsletter_1.png') }}" />
+        <div>
+            <div class="justify-start text-slate-800 text-xl font-bold font-['Graphik'] leading-7 tracking-tight">Subscribe to our Newsletter</div>
+            <div class="justify-start text-gray-700 text-lg font-normal font-['Graphik'] leading-normal tracking-tight">Available exclusivery on Figmaland</div>
+            <div class="py-6 inline-flex flex-col justify-start items-start gap-3 overflow-hidden">
+                <div class="self-stretch px-9 py-5 bg-zinc-100 rounded-[39px] outline outline-1 outline-offset-[-1px] outline-gray-200 flex flex-col justify-start items-start gap-12 overflow-hidden">
+                    <div class="justify-start text-zinc-900 text-sm font-normal font-['Roboto'] leading-none tracking-tight">Your Email</div>
+                </div>
+                <div class="self-stretch px-9 py-4 bg-blue-500 rounded-[35px] flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="inline-flex justify-start items-center gap-2.5 overflow-hidden">
+                        <div class="justify-start text-white text-xl font-normal font-['Graphik'] leading-tight tracking-tight">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter End -->
+
 @endsection
