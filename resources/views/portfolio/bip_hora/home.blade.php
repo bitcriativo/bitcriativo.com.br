@@ -179,4 +179,55 @@
     </section>
     <!-- Contact End -->
 
+    <!-- Footer Start -->
+    <footer class="py-28 bg-slate-800 inline-flex flex-col justify-start items-center">
+        <div>
+            <div class="text-center justify-start text-white text-xl font-bold font-['Graphik'] leading-7 tracking-tight">Annette Steward</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Jennie Cooper</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Julie Henry</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Johnny Murphy</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Gregory Mccoy</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Marvin Mckinney</div>
+        </div>
+
+        <div>
+            <div class="text-center justify-start text-white text-xl font-bold font-['Graphik'] leading-7 tracking-tight">Annette Steward</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Jennie Cooper</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Julie Henry</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Johnny Murphy</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Gregory Mccoy</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Marvin Mckinney</div>
+        </div>
+
+        <div>
+            <div class="text-center justify-start text-white text-xl font-bold font-['Graphik'] leading-7 tracking-tight">Annette Steward</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Jennie Cooper</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Julie Henry</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Johnny Murphy</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Gregory Mccoy</div>
+            <div class="text-center justify-start text-white text-base font-normal font-['Graphik'] leading-7 tracking-tight">Marvin Mckinney</div>
+        </div>
+
+        <address>
+            <div class="flex space-x-2">
+                <div>
+                    <img src="{{ asset('bip-hora/assets/images/icon_pin_map.png') }}"/>
+                </div>
+                <span class="justify-start text-gray-700 text-base font-normal font-sans leading-snug tracking-tight">6386 Spring St undefined Anchorage, <br/>Georgia 12473 United States</span>
+            </div>
+            <div class="flex space-x-2">
+                <div>
+                    <img src="{{ asset('bip-hora/assets/images/icon_phone.png') }}"/>
+                </div>
+                <span class="justify-start text-gray-700 text-base font-normal font-sans leading-snug tracking-tight">(843) 555-0130</span>
+            </div>
+        </address>
+
+        <div class="flex space-x-4 justify-center">
+            <img src="{{ asset('bip-hora/assets/images/icon_social_network_1.png') }}" />
+            <img src="{{ asset('bip-hora/assets/images/icon_social_network_2.png') }}" />
+            <img src="{{ asset('bip-hora/assets/images/icon_social_network_3.png') }}" />
+        </div>
+    </footer>
+    <!-- Footer End -->
 @endsection
