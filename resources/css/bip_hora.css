@@ -14,10 +14,25 @@
 
 @layer {
     .hero {
-
+        @apply py-8 flex flex-col justify-center px-4 space-y-8;
+        @apply md:h-dvh;
     }
 
     .display-1 {
         @apply text-center justify-start text-white text-5xl font-normal font-sans leading-[55px] tracking-tight;
+        @apply lg:text-7xl lg:font-bold lg:font-sans lg:leading-[84px];
+    }
+
+    .paragraph {
+        @apply text-center justify-start text-white text-3xl font-normal font-sans leading-10 tracking-tight;
+    }
+
+    .paragraph--testimonials {
+        @apply text-center justify-start text-gray-700 text-sm font-bold font-sans leading-none tracking-tight;
+        @apply lg:text-3xl lg:font-normal lg:font-sans lg:leading-10;
+    }
+
+    .btn {
+        @apply mx-auto px-4 py-2 my-4 bg-blue-500 rounded-[35px] flex-col inline-flex items-center gap-2.5 overflow-hidden justify-start text-white text-lg font-normal font-sans leading-tight tracking-tight;
     }
 }
