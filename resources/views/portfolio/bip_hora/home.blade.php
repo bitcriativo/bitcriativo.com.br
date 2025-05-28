@@ -122,4 +122,61 @@
     </section>
     <!-- Testimonials End -->
 
+    <!-- Contact Start -->
+    <section>
+        <h2 class="text-center justify-start text-slate-800 text-5xl font-normal font-sans leading-[55px] tracking-tight">Contact Us</h2>
+        <div class="text-center justify-start text-gray-700 text-3xl font-normal font-['Graphik'] leading-10 tracking-tight">Most calendars are <br/>designed for teams. </div>
+
+        <div class="flex space-x-4 justify-center">
+            <img src="{{ asset('bip-hora/assets/images/icon_social_network_1.png') }}" />
+            <img src="{{ asset('bip-hora/assets/images/icon_social_network_2.png') }}" />
+            <img src="{{ asset('bip-hora/assets/images/icon_social_network_3.png') }}" />
+        </div>
+
+        <address>
+            <div class="flex space-x-2">
+                <div>
+                    <img src="{{ asset('bip-hora/assets/images/icon_pin_map.png') }}"/>
+                </div>
+                <span class="justify-start text-gray-700 text-base font-normal font-sans leading-snug tracking-tight">6386 Spring St undefined Anchorage, <br/>Georgia 12473 United States</span>
+            </div>
+            <div class="flex space-x-2">
+                <div>
+                    <img src="{{ asset('bip-hora/assets/images/icon_phone.png') }}"/>
+                </div>
+                <span class="justify-start text-gray-700 text-base font-normal font-sans leading-snug tracking-tight">(843) 555-0130</span>
+            </div>
+            <div class="flex space-x-2">
+                <div>
+                    <img src="{{ asset('bip-hora/assets/images/icon_pin_map.png') }}"/>
+                </div>
+                <span class="justify-start text-gray-700 text-base font-normal font-sans leading-snug tracking-tight">willie.jennings@example.com</span>
+            </div>
+        </address>
+        <div>
+            <div class="self-stretch px-12 py-12 bg-white rounded-[20px] shadow-[0px_13px_19px_0px_rgba(0,0,0,0.07)] outline outline-1 outline-offset-[-1px] outline-zinc-300 inline-flex flex-col justify-start items-start gap-11 overflow-hidden">
+                <div class="inline-flex justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="justify-start text-slate-800 text-xl font-bold font-['Graphik'] leading-7 tracking-tight">Contact Us</div>
+                </div>
+                <div class="self-stretch px-5 py-5 bg-neutral-100 rounded-[39px] outline outline-1 outline-offset-[-1px] outline-gray-200 flex flex-col justify-start items-start gap-12 overflow-hidden">
+                    <div class="justify-start text-zinc-900 text-base font-normal font-['Roboto'] leading-none tracking-tight">Your Name</div>
+                </div>
+                <div class="self-stretch px-5 py-5 bg-neutral-100 rounded-[39px] outline outline-1 outline-offset-[-1px] outline-gray-200 flex flex-col justify-start items-start gap-12 overflow-hidden">
+                    <div class="justify-start text-zinc-900 text-base font-normal font-['Roboto'] leading-none tracking-tight">Your Email</div>
+                </div>
+                <div class="self-stretch px-5 py-6 bg-neutral-100 outline outline-1 outline-offset-[-1px] outline-gray-200 flex flex-col justify-start items-start gap-12 overflow-hidden">
+                    <div class="self-stretch h-36 relative overflow-hidden">
+                        <div class="left-0 top-0 absolute justify-start text-zinc-900 text-base font-normal font-['Roboto'] leading-none tracking-tight">Your Message</div>
+                    </div>
+                </div>
+                <div class="w-36 px-9 py-4 bg-blue-500 rounded-[35px] flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="inline-flex justify-start items-center gap-2.5 overflow-hidden">
+                        <div class="justify-start text-white text-xl font-normal font-['Graphik'] leading-tight tracking-tight">Send</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
 @endsection
