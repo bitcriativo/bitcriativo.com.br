@@ -2,8 +2,10 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "webpack --mode=production",
-        "dev": "webpack --watch"
+        "build": "vite build",
+        "build:webpack": "webpack --mode=production",
+        "dev": "vite dev",
+        "dev:webpack": "webpack --watch"
     },
     "devDependencies": {
         "@babel/core": "^7.27.1",
