@@ -72,4 +72,33 @@
     </section>
     <!-- Newsletter End -->
 
+    <!-- Partners Start -->
+    <section>
+        <h2 class="text-center justify-start text-slate-800 text-5xl font-normal font-sans leading-[55px] tracking-tight">Partners</h2>
+        <div class="text-center justify-start text-gray-700 text-3xl font-normal font-sans leading-10 tracking-tight">Most calendars are designed for teams. <br/>Slate is designed for freelancers</div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <div class="mx-auto border">
+                <div class="justify-start text-gray-700 text-base font-normal font-['Graphik'] leading-snug tracking-tight">Client Name</div>
+                <img src="{{ asset('bip-hora/assets/images/image_partners_1.png') }}" />
+            </div>
+
+            <div class="mx-auto border">
+                <div class="justify-start text-gray-700 text-base font-normal font-['Graphik'] leading-snug tracking-tight">Client Name</div>
+                <img src="{{ asset('bip-hora/assets/images/image_partners_2.png') }}" />
+            </div>
+
+            <div class="mx-auto border">
+                <div class="justify-start text-gray-700 text-base font-normal font-['Graphik'] leading-snug tracking-tight">Client Name</div>
+                <img src="{{ asset('bip-hora/assets/images/image_partners_3.png') }}" />
+            </div>
+        </div>
+        <div class="flex justify-center">
+                <a href="#" class="mx-auto px-4 py-2 my-4 bg-blue-500 rounded-[35px] flex-col inline-flex items-center gap-2.5 overflow-hidden justify-start text-white text-lg font-normal font-sans leading-tight tracking-tight">
+                    Try For Free
+                </a>
+            </div>
+    </section>
+    <!-- Partners End -->
+
 @endsection
