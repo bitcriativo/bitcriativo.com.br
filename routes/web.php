@@ -19,3 +19,8 @@ Route::post('/form/contact', [FormContactController::class, 'submitFormContact']
 Route::prefix('/blog')->group(function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
 });
+
+/** Route Landingpage */
+Route::get('/links', function () {
+    return view('landing_pages.linktree');
+})->name('linktree');

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -8,4 +10,176 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@theme {
+    /** Colors Start */
+    --color-background-primary: #ECF0F1;
+    --color-background-primary-light: #FAFEFF;
+    --color-background-primary-dark: #D4D8D9;
+
+    --color-primary: #FB2C36;
+    --color-primary-light: #FF3B44;
+    --color-primary-dark: #DB1D26;
+
+    --color-secondary: #101828;
+    --color-secondary-light: #1B2842;
+    --color-secondary-dark: #06090F;
+
+    /** Accent */
+    --color-accent-success: #4CAF50;
+    --color-accent-danger: #D32F2F;
+    --color-accent-warning: #F9A825;
+    --color-accent-info: #1976D2;
+    --color-accent-light: #F5F5F5;
+    --color-accent-dark: #212121;
+    --color-accent-white: #FFFFFF;
+
+    /** Colors End */
+
+    --font-montserrat: 'Montserrat';
+
+    --font-sans: 'Montserrat', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer {
+    .navigation {
+        @apply flex gap-4 *:p-2 *:uppercase *:hover:text-primary font-montserrat;
+        @apply hidden lg:flex;
+    }
+
+    .overlay__navigation__sidebar {
+        @apply content-[''] fixed z-40 top-0 left-0 bg-black/60 w-full h-dvh;
+    }
+
+    .navigation .active {
+        @apply text-primary;
+    }
+
+    .navigation--mobile {
+        @apply *:uppercase text-end space-y-4;
+    }
+
+    .navigation--mobile .active {
+        @apply text-primary;
+    }
+
+    .section__label {
+        @apply font-montserrat font-light text-[54px] leading-[64px];
+        @apply text-black/20 uppercase;
+        @apply py-6;
+    }
+
+    /** Typography Start */
+    .code-1 {
+        @apply font-montserrat font-normal text-[12px] leading-['16px'];
+    }
+
+    .label-1 {
+        @apply hidden;
+    }
+
+    .helper-text-1 {
+        @apply hidden;
+    }
+
+    .legal-1 {
+        @apply hidden;
+    }
+
+    .body-compact-01 {
+        @apply hidden;
+    }
+
+    .body-01 {
+        @apply font-montserrat font-light text-[18px] leading-[24px];
+    }
+
+    .heading-compact-01 {
+        @apply font-montserrat font-semibold text-[18px] leading-[24px];
+    }
+
+    .heading-compact-02 {
+        @apply font-montserrat font-semibold text-[24px] leading-[30px];
+    }
+
+    .heading-01 {
+        @apply hidden;
+    }
+
+    .heading-02 {
+        @apply hidden;
+    }
+
+    .heading-03 {
+        @apply hidden;
+    }
+
+    .heading-04 {
+        @apply hidden;
+    }
+
+    .heading-05 {
+        @apply hidden;
+    }
+
+    .heading-06 {
+        @apply font-montserrat font-light text-[42px] leading-[50px];
+    }
+
+    .heading-07 {
+        @apply font-montserrat font-light text-[54px] leading-[64px];
+    }
+
+    .fluid-paragraph-01 {
+        @apply hidden;
+    }
+
+    .fluid-quotation-01 {
+        @apply hidden;
+    }
+
+    .fluid-display-01 {
+        @apply font-montserrat font-light text-[164px] leading-[140%];
+    }
+
+    .fluid-display-02 {
+        @apply font-montserrat font-light text-[164px] leading-[140%];
+    }
+
+    .fluid-display-03 {
+        @apply font-montserrat font-light text-[164px] leading-[140%];
+    }
+
+    .fluid-display-04 {
+        @apply font-montserrat font-light text-[164px] leading-[140%];
+    }
+
+    /** Typography End */
+
+    /** Components: Button Start */
+    .btn {
+        @apply bg-primary inline-flex justify-center px-4 py-2 text-accent-light border-transparent;
+        @apply hover:bg-primary-light hover:cursor-pointer;
+        @apply active:bg-primary-dark;
+        @apply uppercase;
+    }
+
+    .btn--ghost {
+        @apply text-primary inline-flex justify-center px-4 py-2 border border-transparent;
+        @apply hover:border-primary;
+        @apply active:text-accent-light active:bg-primary-dark;
+        @apply text-center;
+        @apply uppercase;
+    }
+
+    /** Components: Button End*/
+
+    /** Components: Input Start */
+    .input {
+        @apply border border-background-primary-dark px-4 py-2 outline-primary-light bg-background-primary-light;
+    }
+
+    /** Components: Input End */
 }
