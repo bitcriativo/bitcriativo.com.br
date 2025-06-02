@@ -24,3 +24,8 @@ Route::prefix('/blog')->group(function () {
 Route::get('/links', function () {
     return view('landing_pages.linktree');
 })->name('linktree');
+
+/** Route Chat Request Quote */
+Route::get('/chat-request-quote', function () {
+    return view('website.chat_request_quote.index');
+})->name('chat_request_quote');
