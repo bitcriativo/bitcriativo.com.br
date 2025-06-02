@@ -26,6 +26,6 @@ Route::get('/links', function () {
 })->name('linktree');
 
 /** Route Chat Request Quote */
-Route::get('/chat-request-quote', function () {
+Route::get('/solicitar-orcamento', function () {
     return view('website.chat_request_quote.index');
 })->name('chat_request_quote');
