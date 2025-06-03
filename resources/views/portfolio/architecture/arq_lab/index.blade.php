@@ -20,6 +20,7 @@
         @include('portfolio.architecture.arq_lab.layout.hero')
         @include('portfolio.architecture.arq_lab.layout.about')
         @include('portfolio.architecture.arq_lab.layout.services')
+        @include('portfolio.architecture.arq_lab.layout.photo_gallery')
 
         <!-- Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
