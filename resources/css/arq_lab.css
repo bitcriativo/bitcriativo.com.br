@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import 'tailwindcss';
 
@@ -6,11 +6,6 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
 
 @theme {
     /** Colors Start */
@@ -37,15 +32,13 @@
 
     /** Colors End */
 
-    --font-montserrat: 'Montserrat';
-
-    --font-sans: 'Montserrat', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Open Sans', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 @layer {
     .navigation {
-        @apply flex gap-4 *:p-2 *:uppercase *:hover:text-primary font-montserrat;
+        @apply flex gap-4 *:p-2 *:uppercase *:hover:text-primary font-sans;
         @apply hidden lg:flex;
     }
 
@@ -66,18 +59,18 @@
     }
 
     .section__label {
-        @apply font-montserrat font-light text-[54px] leading-[64px];
+        @apply font-sans font-light text-[54px] leading-[64px];
         @apply text-black/20 uppercase;
         @apply py-6;
     }
 
     /** Typography Start */
     .code-1 {
-        @apply font-montserrat font-normal text-[12px] leading-['16px'];
+        @apply font-sans font-normal text-[12px] leading-['16px'];
     }
 
     .label-1 {
-        @apply font-montserrat font-normal text-[14px] leading-['18px'];
+        @apply font-sans font-normal text-[14px] leading-['18px'];
     }
 
     .helper-text-1 {
@@ -89,19 +82,19 @@
     }
 
     .body-compact-01 {
-        @apply font-montserrat font-semibold text-[18px] leading-['22px'];
+        @apply font-sans font-semibold text-[18px] leading-['22px'];
     }
 
     .body-01 {
-        @apply font-montserrat font-light text-[18px] leading-[24px];
+        @apply font-sans font-light text-[18px] leading-[24px];
     }
 
     .heading-compact-01 {
-        @apply font-montserrat font-semibold text-[18px] leading-[24px];
+        @apply font-sans font-semibold text-[18px] leading-[24px];
     }
 
     .heading-compact-02 {
-        @apply font-montserrat font-semibold text-[24px] leading-[30px];
+        @apply font-sans font-semibold text-[24px] leading-[30px];
     }
 
     .heading-01 {
@@ -125,11 +118,11 @@
     }
 
     .heading-06 {
-        @apply font-montserrat font-light text-[42px] leading-[50px];
+        @apply font-sans font-light text-[42px] leading-[50px];
     }
 
     .heading-07 {
-        @apply font-montserrat font-light text-[54px] leading-[64px];
+        @apply font-sans font-light text-[54px] leading-[64px];
     }
 
     .fluid-paragraph-01 {
@@ -141,19 +134,19 @@
     }
 
     .fluid-display-01 {
-        @apply font-montserrat font-light text-[164px] leading-[140%];
+        @apply font-sans font-light text-[164px] leading-[140%];
     }
 
     .fluid-display-02 {
-        @apply font-montserrat font-light text-[164px] leading-[140%];
+        @apply font-sans font-light text-[164px] leading-[140%];
     }
 
     .fluid-display-03 {
-        @apply font-montserrat font-light text-[164px] leading-[140%];
+        @apply font-sans font-light text-[164px] leading-[140%];
     }
 
     .fluid-display-04 {
-        @apply font-montserrat font-light text-[164px] leading-[140%];
+        @apply font-sans font-light text-[164px] leading-[140%];
     }
 
     /** Typography End */
