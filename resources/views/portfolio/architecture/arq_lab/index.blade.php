@@ -22,6 +22,7 @@
         @include('portfolio.architecture.arq_lab.layout.services')
         @include('portfolio.architecture.arq_lab.layout.photo_gallery')
         @include('portfolio.architecture.arq_lab.layout.info')
+        @include('portfolio.architecture.arq_lab.layout.contact')
 
         <!-- Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
