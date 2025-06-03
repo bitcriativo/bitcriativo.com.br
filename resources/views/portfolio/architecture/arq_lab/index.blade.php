@@ -8,6 +8,7 @@
 
         <!-- Styles  -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+        @stack('styles')
 
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/arq_lab.css'])
@@ -18,6 +19,7 @@
         @include('portfolio.architecture.arq_lab.layout.navbar')
         @include('portfolio.architecture.arq_lab.layout.hero')
         @include('portfolio.architecture.arq_lab.layout.about')
+        @include('portfolio.architecture.arq_lab.layout.services')
 
         <!-- Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
