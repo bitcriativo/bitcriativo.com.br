@@ -26,7 +26,7 @@
         </div>
         <div>
             <a href="#">
-                <img src="{{ asset('portfolio/arq-lab/assets/image/brand.png') }}" />
+                <img src="{{ asset('portfolio/arq-lab/assets/image/brand.png') }}"/>
             </a>
             <div class="flex space-x-8 my-4">
                 <ul class="*:font-sans *:text-lg *:hover:text-primary *:hover:cursor-pointer space-y-4">

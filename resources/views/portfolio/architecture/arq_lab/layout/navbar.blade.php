@@ -1,6 +1,6 @@
 <nav class="navigation">
     <a href="{{ route('portfolio.arq_lab') }}">
-        <img src={{ asset('portfolio/arq-lab/assets/image/brand.png') }} />
+        <img src={{ asset('portfolio/arq-lab/assets/image/brand.svg') }} />
     </a>
 
     <ul class="navigation__list">
@@ -23,7 +23,7 @@
 <nav id="navigation__mobile" class="hidden bg-white z-50 fixed top-0 right-0 w-2/3 h-dvh p-4">
     <div class="flex items-center justify-between">
         <a href="#" class="">
-            <img src={{ asset('portfolio/arq-lab/assets/image/brand.png') }} />
+            <img src={{ asset('portfolio/arq-lab/assets/image/brand.svg') }} />
         </a>
         <button id="navigation__toggler_close" class="flex justify-center items-center">
             <i class="ph ph-x text-3xl hover:text-primary hover:cursor-pointer"></i>
