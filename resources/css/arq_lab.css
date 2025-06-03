@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /** Colors Start */
+    --color-background-primary: #ECF0F1;
+    --color-background-primary-light: #FAFEFF;
+    --color-background-primary-dark: #D4D8D9;
+
+    --color-primary: #873522;
+    --color-primary-light: #FF3B44;
+    --color-primary-dark: #DB1D26;
+
+    --color-secondary: #996830;
+    --color-secondary-light: #1B2842;
+    --color-secondary-dark: #06090F;
+
+    /** Accent */
+    --color-accent-success: #4CAF50;
+    --color-accent-danger: #D32F2F;
+    --color-accent-warning: #F9A825;
+    --color-accent-info: #1976D2;
+    --color-accent-light: #F5F5F5;
+    --color-accent-dark: #212121;
+    --color-accent-white: #FFFFFF;
+
+    /** Colors End */
+
+    --font-sans: 'Open Sans', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --font-outfit: 'Outfit';
+
+    --font-italiana: 'Italiana';
+
+    --font-playfair-display: 'Playfair Display';
+}
+
+@layer {
+    .navigation {
+        @apply *:p-2 *:uppercase font-sans;
+        @apply hidden lg:flex;
+        @apply flex gap-8 lg:gap-12 items-center max-w-7xl px-4 mx-auto my-2 lg:my-6;
+        @apply justify-between;
+    }
+
+    .navigation__list {
+        @apply inline-flex gap-8 ml-auto;
+        @apply hidden lg:inline-flex;
+    }
+
+    .navigation__link {
+        @apply font-outfit font-medium text-[12px] leading-6;
+        @apply hover:text-primary;
+        @apply lg:text-[18px] inline-flex;
+        @apply text-[14px];
+    }
+
+    .navigation__toggler {
+        @apply border flex justify-center items-center hover:cursor-pointer lg:hidden hover:text-primary;
+    }
+
+    .overlay__navigation__sidebar {
+        @apply content-[''] fixed z-40 top-0 left-0 bg-black/60 w-full h-dvh;
+    }
+
+    .navigation .active {
+        @apply text-primary;
+    }
+
+    .navigation--mobile {
+        @apply *:uppercase text-end space-y-4;
+    }
+
+    .navigation--mobile .active {
+        @apply text-primary;
+    }
+
+    .section__label {
+        @apply font-sans font-light text-[54px] leading-[64px];
+        @apply text-black/20 uppercase;
+        @apply py-6;
+    }
+
+    /** Typography Start */
+    .code-1 {
+        @apply font-sans font-normal text-[12px] leading-['16px'];
+    }
+
+    .label-1 {
+        @apply font-sans font-normal text-[14px] leading-['18px'];
+    }
+
+    .helper-text-1 {
+        @apply hidden;
+    }
+
+    .legal-1 {
+        @apply hidden;
+    }
+
+    .body-compact-01 {
+        @apply font-sans font-semibold text-[18px] leading-['22px'];
+    }
+
+    .body-01 {
+        @apply font-sans font-light text-[18px] leading-[24px];
+    }
+
+    .heading-compact-01 {
+        @apply font-sans font-semibold text-[18px] leading-[24px];
+    }
+
+    .heading-compact-02 {
+        @apply font-sans font-semibold text-[24px] leading-[30px];
+    }
+
+    .heading-01 {
+        @apply hidden;
+    }
+
+    .heading-02 {
+        @apply hidden;
+    }
+
+    .heading-03 {
+        @apply hidden;
+    }
+
+    .heading-04 {
+        @apply hidden;
+    }
+
+    .heading-05 {
+        @apply font-sans font-light text-[30px] leading-[38px];
+    }
+
+    .heading-06 {
+        @apply font-sans font-light text-[42px] leading-[50px];
+    }
+
+    .heading-07 {
+        @apply font-sans font-light text-[54px] leading-[64px];
+    }
+
+    .fluid-paragraph-01 {
+        @apply hidden;
+    }
+
+    .fluid-quotation-01 {
+        @apply hidden;
+    }
+
+    .fluid-display-01 {
+        @apply font-sans font-light text-[164px] leading-[140%];
+    }
+
+    .fluid-display-02 {
+        @apply font-sans font-light text-[164px] leading-[140%];
+    }
+
+    .fluid-display-03 {
+        @apply font-sans font-light text-[164px] leading-[140%];
+    }
+
+    .fluid-display-04 {
+        @apply font-sans font-light text-[164px] leading-[140%];
+    }
+
+    .display-01 {
+        @apply hidden;
+    }
+
+    .display-02 {
+        @apply hidden;
+    }
+
+    .display-03 {
+        @apply font-playfair-display font-normal text-[40px];
+    }
+
+    .display-04 {
+        @apply font-italiana font-normal text-6xl;
+    }
+
+    /** Typography End */
+
+    /** Components: Button Start */
+    .btn {
+        @apply bg-primary inline-flex justify-center px-4 py-2 text-accent-light border-transparent;
+        @apply hover:bg-primary-light hover:cursor-pointer;
+        @apply active:bg-primary-dark;
+        @apply uppercase;
+        @apply items-center gap-2 font-semibold;
+        @apply text-sm;
+    }
+
+    .btn--ghost {
+        @apply text-primary inline-flex justify-center px-4 py-2 border border-transparent;
+        @apply hover:border-primary;
+        @apply active:text-accent-light active:bg-primary-dark;
+        @apply text-center;
+        @apply uppercase;
+    }
+
+    /** Components: Button End*/
+
+    /** Components: Input Start */
+    .input {
+        @apply border border-background-primary-dark px-4 py-2 outline-primary-light bg-background-primary-light;
+    }
+
+    /** Components: Input End */
+}

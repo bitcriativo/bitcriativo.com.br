@@ -29,3 +29,5 @@ Route::get('/links', function () {
 Route::get('/solicitar-orcamento', function () {
     return view('website.chat_request_quote.index');
 })->name('chat_request_quote');
+
+require_once __DIR__ . '/portfolio.php';
