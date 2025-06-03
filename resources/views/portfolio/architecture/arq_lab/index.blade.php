@@ -7,11 +7,15 @@
         <title>ArqLab</title>
 
         <!-- Styles  -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/arq_lab.css'])
         @endif
     </head>
     <body>
+
+        @include('portfolio.architecture.arq_lab.layout.navbar')
 
         <!-- Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))

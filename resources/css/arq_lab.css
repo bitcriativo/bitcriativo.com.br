@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @import 'tailwindcss';
 
@@ -13,7 +14,7 @@
     --color-background-primary-light: #FAFEFF;
     --color-background-primary-dark: #D4D8D9;
 
-    --color-primary: #FB2C36;
+    --color-primary: #873522;
     --color-primary-light: #FF3B44;
     --color-primary-dark: #DB1D26;
 
@@ -34,12 +35,32 @@
 
     --font-sans: 'Open Sans', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --font-outfit: 'Outfit';
 }
 
 @layer {
     .navigation {
-        @apply flex gap-4 *:p-2 *:uppercase *:hover:text-primary font-sans;
+        @apply *:p-2 *:uppercase font-sans;
         @apply hidden lg:flex;
+        @apply flex gap-8 lg:gap-12 items-center max-w-7xl px-4 mx-auto my-2 lg:my-6;
+        @apply justify-between;
+    }
+
+    .navigation__list {
+        @apply inline-flex gap-8 ml-auto;
+        @apply hidden lg:inline-flex;
+    }
+
+    .navigation__link {
+        @apply font-outfit font-medium text-[12px] leading-6;
+        @apply hover:text-primary;
+        @apply lg:text-[18px] inline-flex;
+        @apply text-[14px];
+    }
+
+    .navigation__toggler {
+        @apply border flex justify-center items-center hover:cursor-pointer lg:hidden hover:text-primary;
     }
 
     .overlay__navigation__sidebar {
@@ -157,6 +178,8 @@
         @apply hover:bg-primary-light hover:cursor-pointer;
         @apply active:bg-primary-dark;
         @apply uppercase;
+        @apply items-center gap-2 font-semibold;
+        @apply text-sm;
     }
 
     .btn--ghost {
