@@ -29,3 +29,9 @@ Route::get('/links', function () {
 Route::get('/solicitar-orcamento', function () {
     return view('website.chat_request_quote.index');
 })->name('chat_request_quote');
+
+/** Architecture */
+
+Route::prefix('/portfolio/arquitetura', function () {
+    Route::view('/arq-lab', 'portfolio.architecture.arq_lab.index')->name('portfolio.arq_lab');
+});
