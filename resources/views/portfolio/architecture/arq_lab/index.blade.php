@@ -6,6 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>ArqLab</title>
 
+        <!-- FAVICON START -->
+        <link rel="icon" href="{{ asset("portfolio/arq-lab/assets/image/favicon.ico") }}" type="image/x-icon">
+        <link rel="icon" href="{{ asset("portfolio/arq-lab/assets/image/favicon-32x32.png") }}" type="image/png">
+        <link rel="apple-touch-icon" href="{{ asset("portfolio/arq-lab/assets/image/apple-touch-icon.png") }}">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
         <!-- Styles  -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
         @stack('styles')
