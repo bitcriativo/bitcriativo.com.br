@@ -17,6 +17,7 @@
 
         @include('portfolio.architecture.arq_lab.layout.navbar')
         @include('portfolio.architecture.arq_lab.layout.hero')
+        @include('portfolio.architecture.arq_lab.layout.about')
 
         <!-- Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
